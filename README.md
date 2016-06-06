@@ -1,9 +1,10 @@
 # TriggerGenerator
 Data audit trigger generator for Oracle Database
 
-If you need data auditing on Oracle database use this program to generate required triggers.
+If you need data auditing on Oracle database use this program to generate required triggers.<br/>
 
-First create data audit table. Here is the create sql:
+First create data audit table. Here is the create sql:<br/>
+<code>
 CREATE TABLE DATA_AUDIT
 (
   AUDID        RAW(16) DEFAULT SYS_GUID(),
@@ -19,5 +20,5 @@ CREATE TABLE DATA_AUDIT
 );
 
 alter table data_audit add primary key (AUDID);
-
+</code>
 Then use the trigger generator program to generate data audit triggers.
