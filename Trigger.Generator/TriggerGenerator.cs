@@ -221,7 +221,7 @@ namespace Trigger.Generator
             triggerBody.AppendLine(idVarContent.ToString());
 
             var insertStatement = new StringBuilder();
-            insertStatement.AppendFormat(@"  INSERT INTO ""{0}"".""AUDITENTERPRISE""", ownerName, tableName);
+            insertStatement.AppendFormat(@"  INSERT INTO ""{0}"".""DATA_AUDIT""", ownerName, tableName);
             insertStatement.AppendLine();
             insertStatement.AppendFormat("   (AUDID, TABLENAME, RECID, OROWID, IUDFLAG, AUDDATE, USERNAME, TERMINAL,PROGRAMNAME, XMLCONTENT)");
             insertStatement.AppendLine();
